@@ -1,0 +1,57 @@
+@font-face {
+    font-family: comfortaa;
+    src: url(./Source/Comfortaa-Light.ttf);
+}
+html{
+    direction: rtl;
+    font-family: comfortaa;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 50px 150px;
+}
+.L-Item{
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 20px;
+    border-radius: 10px 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: move;  
+}
+.LI-Head{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-radius: 10px 30px;
+    margin-left: 30px;
+}
+.LI-Head img{
+    width: 70px;
+}
+.LIH-Logo{
+    font-size: 2rem;
+    font-weight:bold;  
+    padding-left: 10px;
+}
+.LIC-CName{
+    font-size: 1.2  rem;
+    font-weight:bold;  
+}
+.LI-Content p{
+    font-size: 0.8rem;
+}
+.L-Item.DragEl{
+    opacity: 0.4;
+    background-color: lightblue;
+}
+.L-Item.Over{
+    border-top: 2px solid blue;
+    background-color: lightblue;
+}
